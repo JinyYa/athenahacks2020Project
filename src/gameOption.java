@@ -14,6 +14,15 @@ public class gameOption {
     public int getStudyingChange(){
         return studyingChange;
     }
-    public int flag;
 
+    public int getMentalHealthChange() {
+        return mentalHealthChange;
+    }
+
+    public int getSocialChange() {
+        return socialChange;
+    }
+    public int getMoneyChange() {
+        return socialChange;
+    }
 }
