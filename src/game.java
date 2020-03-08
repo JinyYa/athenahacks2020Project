@@ -39,7 +39,11 @@ public class game {
   public static void gameEnding(int endingType){
 
   }
+  //return user's input as int
   public static int getChoice(){
+    sc = new Scanner(System.in);
+    int choice = sc.nextInt(); //storing the users choice
+    return choice;
 
   }
 
