@@ -1,10 +1,15 @@
+import java.util.Scanner;
+
 public class Game {
 
 
     public static ArrayList<Card> cards;
 
     public void game(){
-        boolean gameOVer = false;
+        boolean gameOver = false;
+        Scanneer sc = new Scanner();
+
+
 
         gameSetup();
 
@@ -26,4 +31,9 @@ public class Game {
 
         gameEnding(endingType);
     }
+
+
+
+
+
 }

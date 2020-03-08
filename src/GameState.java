@@ -6,8 +6,7 @@ public class GameState {
     private int mental_health;
     private int social;
 
-    public gameState(){
-
+    public gameState(){ //constructor method
         //resources
         money = 5;
         grade = 5;
