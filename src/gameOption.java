@@ -14,6 +14,6 @@ public class gameOption {
     public int getStudyingChange(){
         return studyingChange;
     }
-    public int
+    public int flag;
 
 }
