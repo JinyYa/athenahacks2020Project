@@ -3,13 +3,18 @@
 public class Card {
 
     private String name_of_card;
-    private String image;
+    //private String image;
     private String Description;
     private String OptionAText;
     private String OptionBText;
 
     private Card OptionANext;
     private Card OptionBNext;
+
+    public Card(String name, String descript, String OptionA, ){
+
+    }
+
 
     public void show_card(){
 
