@@ -90,9 +90,8 @@ public class GameState {
         else{
           return false;
         }
-
-
     }
+
 
     public int getEndingType(){
       if(gameOver() == false){

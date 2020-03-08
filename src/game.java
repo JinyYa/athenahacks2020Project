@@ -68,6 +68,7 @@ public class game {
             break;
           }
           card.show_card();
+          System.out.println("Social : "+ gs.getSocial() + "Academics: " + gs.getStudying() +" Mental Health: "+ gs.getMental_health() + " Money: "+gs.getMoney());
           userChoice = getChoice();
           EventCard[] eventCards = gs.updateGameState(userChoice, card);
 
