@@ -1,5 +1,6 @@
 import java.util.NoSuchElementException;
 import java.util.Queue;
+import java.util.LinkedList;
 
 
 public class CardQueue {
@@ -12,7 +13,7 @@ public class CardQueue {
 
     //creates an empty card queue
     public CardQueue() {
-        this.queue = new Queue <Card>;
+        this.queue = new LinkedList<>();;
     }
 
     //adds cards to current queue
@@ -26,7 +27,7 @@ public class CardQueue {
         Card toReturn;
         toReturn = currentCard.getSubCard(choice);
         if(toReturn == null){
-            toReturn = queue.remove();
+            toReturn = queue.poll();
         }
         return toReturn;
     }
@@ -34,4 +35,5 @@ public class CardQueue {
     public int size(){
         return queue.size();
     }
+
 }

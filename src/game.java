@@ -57,11 +57,17 @@ public class game {
       Card card = null;
       //gameSetup();
       while(!gs.gameOver()){
-          if(gs.hasEvent()){
-              //do event
-          }
+//          if(gs.hasEvent()){
+//              //do event
+//          }
 
           card = cards.getNextCard(card,userChoice);
+
+          if(card == null){
+            //all cards used up!
+            //good ending
+            break;
+          }
           card.show_card();
           userChoice = getChoice();
           gs.updateGameState(userChoice, card);

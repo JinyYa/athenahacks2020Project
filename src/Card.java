@@ -30,6 +30,9 @@ public class Card {
         return null;
       }
     }
+    public Card getSubCard(int option) {
+        return options[option].getSubCard();
+    }
 
     //    public void option_A_execute(){
 //    }
