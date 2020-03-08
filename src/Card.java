@@ -8,8 +8,21 @@ public class Card {
     private String OptionAText;
     private String OptionBText;
 
-    private Card OptionANext;
-    private Card OptionBNext;
+
+    private int studyingChangeA;
+    private int socialChangeA;
+    private int moneyChangeA;
+    private int mentalHealthChangeA;
+    private int eventFlagA;
+    private Card subCardA;
+
+
+    private int studyingChangeB;
+    private int socialChangeB;
+    private int moneyChangeB;
+    private int mentalHealthChangeB;
+    private int eventFlagB;
+    private Card subCardB;
 
     public Card(String name, String descript, String OptionA, ){
 

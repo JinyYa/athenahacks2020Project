@@ -41,4 +41,8 @@ public class GameState {
         grade += change;
     }
 
+    public void updateGameState(int userChoice, Card card){
+
+    }
+
 }
