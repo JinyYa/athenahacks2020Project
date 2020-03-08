@@ -10,6 +10,10 @@ public class GameState {
     //private int[10] flags;
     private int club;
 
+    //do we add this?
+    private int grade;
+    private int roommate;
+
 
     public GameState(){ //constructor method
         //resources
@@ -55,28 +59,32 @@ public class GameState {
     }
     public boolean gameOver(){
         //studying 0
-        if(){
+        if(money == 0){
             //set gameendType to certain int
+          return true;
         }
 
-        else if(){
-
+        else if(studying == 0){
+          return true;
         }
-        else if(){
-
+        else if(mental_health == 0){
+          return true;
         }
-        else if{
-
+        else if(social ==0){
+          return true;
         }
-        else(){
-
+        else if (club == 0){
+          return true;
+        }
+        else{
+          return false;
         }
 
 
     }
 
     public int getEndingType(){
-
+      return 0;
     }
 
 
