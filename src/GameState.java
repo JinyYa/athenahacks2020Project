@@ -2,14 +2,14 @@
 public class GameState {
     public static final int MAX_RESOURCE = 20;
     private int money;
-    private int grade;
+    private int studying;
     private int mental_health;
     private int social;
 
     public gameState(){ //constructor method
         //resources
         money = 5;
-        grade = 5;
+        studying = 5;
         mental_health = 5;
         social = 5;
 
