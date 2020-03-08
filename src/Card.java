@@ -4,6 +4,7 @@ public class Card {
 
     private String name_of_card;
     //private String image;
+<<<<<<< HEAD
     private String description;
     private String optionAText;
     private String optionBText;
@@ -11,6 +12,11 @@ public class Card {
 
 
 
+=======
+    private String Description;
+    
+    private gameOption[] options;
+>>>>>>> 9baeca534a1064b22e1392416b815ccd457ec7a5
 
 
     public Card(String name, String descript, String OptionA, ){

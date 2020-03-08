@@ -12,6 +12,8 @@ public class gameOption {
         return subCard;
     }
     public int getStudyingChange(){
+        return studyingChange;
+
 
     }
 
