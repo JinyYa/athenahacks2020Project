@@ -18,7 +18,7 @@ public class CardQueue {
 
     //adds cards to current queue
     public void addCard(Card card){
-        queue.add(card);
+        this.queue.add(card);
     }
     public void addCard(Card card,int loc){
         queue.add(loc,card);
@@ -27,11 +27,13 @@ public class CardQueue {
 
     //gets sub-cards if there are OptionANext or OptionBNext cards
     //or just next card in queue by popping
-    public Card getNextCard(Card currentCard, int choice) throws NoSuchElementException {
-        Card toReturn;
-        toReturn = currentCard.getSubCard(choice);
+    public Card getNextCard(Card currentCard, int choice) {
+        Card toReturn = null;
+        if(currentCard!=null){
+          toReturn = currentCard.getSubCard(choice);
+        }
         if(toReturn == null){
-            toReturn = queue.poll();
+            return queue.poll();
         }
         return toReturn;
     }
