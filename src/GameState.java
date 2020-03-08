@@ -1,11 +1,13 @@
 
 public class GameState {
     public static final int MAX_RESOURCE = 20;
+    public static final int NO_ROOMMATE = 0;
+
     private int money;
     private int studying;
     private int mental_health;
     private int social;
-    private int[10] flags ;
+    private int[10] flags;
     private int club;
 
 
@@ -17,12 +19,12 @@ public class GameState {
         social = 5;
 
         //special event flags/vars
-        roommate = 0;
+        roommate = NO_ROOMMATE;
         club = 0;
     }
 
-    public int getGrade() {
-        return grade;
+    public int getStudying() {
+        return getStudying();
     }
 
     public int getMental_health() {
