@@ -1,78 +1,22 @@
-import java.util.Scanner;
-import java.util.ArrayList;
+public class Game {
 
-public class game {
-  private static final String STARTER_PROMPT = "Hello! Welcome to College Crusade. This game will help you keep track of everything you accomplished during the day. At the end of the game, we'll print your mental health, social, financial and academic score. Good luck! Press enter to start";
+    public void game(){
+        boolean gameOVer = false;
 
-  private boolean check = false;
-  private int money;
-  private int studying;
-  private int mental_health;
-  private int social;
+        gameSetup();
 
-    public static CardQueue cards;
-    public static GameState gs;
+        while(!gameOver){
+            if(event){
 
-    public void study(){
-      String prompt = "Did you study today?";
-      // Scanner sc = new Scanner(System.in);
-      // String readString = sc.nextLine();
-      //
-      System.out.println(prompt);
-      // return prompt;
-    }
+            }
+            show_card();
+            swipe();
 
-    public static boolean check() {
-      Scanner sc = new Scanner(System.in);
-      String readString = sc.nextLine();
-      System.out.println(readString);
-      if (readString.equals("")) { //checks if the user pressed enter
-        return true;
-      }
-      else {
-        System.out.println("it didn't work");
-        return true;
-      }
-    }
-  public static void gameEnding(int endingType){
-
-  }
-  public static int getChoice(){
-
-  }
-
-    public static void main(String[] args) {
-
-      System.out.println(STARTER_PROMPT);
-      check();
-      int userChoice = 0;
-      int endingType = 0;
+            //state machine for any kind of update to game state??
 
 
-      boolean gameOver = false;
-      Card card = null;
-      //gameSetup();
-      while(!gameOver){
-//          i
-          card = cards.getNextCard(card,userChoice);
-          card.show_card();
-          userChoice = getChoice();
-          gs.updateGameState(userChoice, card);
-          //state machine for any kind of update to game state??
         }
 
         gameEnding(endingType);
-      }
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 }
