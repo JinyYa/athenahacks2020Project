@@ -7,7 +7,7 @@ public class GameState {
     private int studying;
     private int mental_health;
     private int social;
-    private int[10] flags;
+    //private int[10] flags;
     private int club;
 
 
@@ -48,9 +48,29 @@ public class GameState {
         //update all game resources
 
         //set all flags
-        if (card.getOption(choice).getFlag()){
+//        if (card.getOption(choice).getFlag()){
+//
+//        }
+    }
+    public boolean gameOver(){
+        //studying 0
+        if(){
 
         }
+        else if(){
+
+        }
+        else if(){
+
+        }
+        else if{
+
+        }
+        else(){
+
+        }
+
+
     }
 
 }

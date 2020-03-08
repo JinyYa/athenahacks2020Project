@@ -68,6 +68,6 @@ public class game {
           //state machine for any kind of update to game state??
         }
 
-        gameEnding(endingType);
+        gameEnding(gs.getEndingType());
       }
 }
