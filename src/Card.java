@@ -1,5 +1,5 @@
 public class Card {
-    
+
     private String name_of_card;
     private String image;
     private String Description;
