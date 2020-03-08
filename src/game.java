@@ -53,12 +53,11 @@ public class game {
       Card card = null;
       //gameSetup();
       while(!gameOver){
-//          if(gs.hasEvent()){
-//          }
+//          i
           card = cards.getNextCard(card,userChoice);
           card.show_card();
           userChoice = getChoice();
-          gs.swipe(userChoice, card);
+          gs.updateGameState(userChoice, card);
           //state machine for any kind of update to game state??
         }
 

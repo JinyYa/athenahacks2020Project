@@ -5,16 +5,20 @@ public class GameState {
     private int studying;
     private int mental_health;
     private int social;
+    private int roommate;
+    private int club;
 
-    public gameState(){ //constructor method
+
+    public GameState(){ //constructor method
         //resources
         money = 5;
         studying = 5;
         mental_health = 5;
         social = 5;
 
-        //special event flags
-
+        //special event flags/vars
+        roommate = 0;
+        club = 0;
     }
 
     public int getGrade() {
