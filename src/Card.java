@@ -10,6 +10,10 @@ public class Card {
     protected GameOption[] options;
     //private
 
+    public GameOption[] getOptions(){
+      return options;
+    }
+
     public Card(){
         this.name_of_card = "";
         this.description = "";
@@ -26,20 +30,27 @@ public class Card {
 
     public void show_card(){
       System.out.println(this.name_of_card + "" + this.description + "" + this.options + "");
+      for(int i = 0; i<options.length; i++){
+        System.out.println((i+1)+ ". "+options[i]);
+      }
     }
+
+
 
     public GameOption getOption(int choice){
       //check bounds
-      if(choice > 0 && choice < options.length){
+      if(choice >= 0 && choice <options.length){
         return options[choice];
       }
       else{
         return null;
       }
     }
+
     public Card getSubCard(int option) {
         return options[option].getSubCard();
     }
+
 
     //    public void option_A_execute(){
 //    }
