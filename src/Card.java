@@ -5,24 +5,8 @@ public class Card {
     private String name_of_card;
     //private String image;
     private String Description;
-    private String OptionAText;
-    private String OptionBText;
-
-
-    private int studyingChangeA;
-    private int socialChangeA;
-    private int moneyChangeA;
-    private int mentalHealthChangeA;
-    private int eventFlagA;
-    private Card subCardA;
-
-
-    private int studyingChangeB;
-    private int socialChangeB;
-    private int moneyChangeB;
-    private int mentalHealthChangeB;
-    private int eventFlagB;
-    private Card subCardB;
+    
+    private gameOption[] options;
 
     public Card(String name, String descript, String OptionA, ){
 
