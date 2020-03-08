@@ -4,12 +4,16 @@ public class Card {
 
     private String name_of_card;
     //private String image;
+
     private String Description;
 
     private gameOption[] options;
 
-    public Card(String name, String descript, String OptionA, ){
 
+    public Card(String name, String descript, String OptionA, ){
+      this.name_of_card = name;
+      this.description = descript;
+      this.optionAText = optionA;
     }
 
 
