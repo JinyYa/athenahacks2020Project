@@ -23,8 +23,8 @@ public class Card {
 
     public gameOption getOption(int choice){
       //check bounds
-      if(gameOption > 0 && gameOption <= gameOption.length){
-        return getOption[choice];
+      if(options > 0 && options <= options.length){
+        return options[choice];
       }
       else{
         return;
