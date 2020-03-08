@@ -10,10 +10,10 @@ public class Card {
     private gameOption[] options;
 
 
-    public Card(String name, String descript, String OptionA, ){
+    public Card(String name, String descript, gameOption[] arr){
       this.name_of_card = name;
       this.description = descript;
-      this.optionAText = optionA;
+      this.options = arr;
     }
 
 
