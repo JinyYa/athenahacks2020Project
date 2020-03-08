@@ -9,8 +9,10 @@ public class game {
   private int studying;
   private int mental_health;
   private int social;
+  public static Scanner sc;
 
-    public static CardQueue cards;
+
+  public static CardQueue cards;
     public static GameState gs;
 
     public void study(){
@@ -23,7 +25,7 @@ public class game {
     }
 
     public static boolean check() {
-      Scanner sc = new Scanner(System.in);
+      sc = new Scanner(System.in);
       String readString = sc.nextLine();
       System.out.println(readString);
       if (readString.equals("")) { //checks if the user pressed enter
@@ -42,7 +44,7 @@ public class game {
   }
 
     public static void main(String[] args) {
-
+      sc = new Scanner(System.in);
       System.out.println(STARTER_PROMPT);
       check();
       int userChoice = 0;
