@@ -5,7 +5,7 @@ public class Card {
     private String name_of_card;
     //private String image;
 
-    private String Description;
+    private String description;
 
     private gameOption[] options;
 
@@ -18,7 +18,7 @@ public class Card {
 
 
     public void show_card(){
-
+      System.out.println(this.name_of_card + "" + this.description + "" + this.options + "");
     }
 
     public gameOption getOption(int choice){
