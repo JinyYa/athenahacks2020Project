@@ -10,7 +10,8 @@ public class game {
   private int mental_health;
   private int social;
 
-    public static ArrayList<Card> cards;
+    public static CardQueue cards;
+    public static GameState gs;
 
     public void game(){
       this.money = 5;
