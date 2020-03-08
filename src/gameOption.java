@@ -4,10 +4,7 @@ public class gameOption {
     private int socialChange;
     private int moneyChange;
     private int mentalHealthChange;
-
-
-    private Card eventCard;
-    private int eventCardLoc;
+    private EventCard[] eventCards;
 
     public Card subCard;
 
@@ -27,11 +24,8 @@ public class gameOption {
     public int getMoneyChange() {
         return socialChange;
     }
-    public Card getEventCard(){
-        return eventCard;
-    }
-    public int getEventCardLoc(){
-        return eventCardLoc;
+    public EventCard[] getEventCards(){
+        return eventCards;
     }
 
 }

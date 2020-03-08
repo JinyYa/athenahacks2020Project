@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -70,8 +71,11 @@ public class game {
           }
           card.show_card();
           userChoice = getChoice();
-          gs.updateGameState(userChoice, card);
-          //state machine for any kind of update to game state??
+          EventCard[] eventCards = gs.updateGameState(userChoice, card);
+
+          for (int i =0; i<eventCards.length; i++){
+            cards.addCard(eventCards[i]);
+          }
         }
 
         gameEnding(gs.getEndingType());

@@ -2,12 +2,19 @@
 
 public class Card {
 
-    private String name_of_card;
+    protected String name_of_card;
     //private String image;
 
-    private String description;
+    protected String description;
 
-    private gameOption[] options;
+    protected gameOption[] options;
+    //private
+
+    public Card(){
+        this.name_of_card = "";
+        this.description = "";
+        this.options = null;
+    }
 
 
     public Card(String name, String descript, gameOption[] arr){
