@@ -5,7 +5,7 @@ public class GameState {
     private int studying;
     private int mental_health;
     private int social;
-    private int roommate;
+    private int[10] flags ;
     private int club;
 
 
@@ -42,7 +42,13 @@ public class GameState {
     }
 
     public void updateGameState(int userChoice, Card card){
+        gameOption myOption = card.getOption(choice);
+        //update all game resources
 
+        //set all flags
+        if (card.getOption(choice).getFlag()){
+
+        }
     }
 
 }
