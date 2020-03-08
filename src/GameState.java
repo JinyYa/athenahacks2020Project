@@ -7,6 +7,7 @@ public class GameState {
     private int social;
 
     public gameState(){
+
         //resources
         money = 5;
         grade = 5;
