@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class game {
-  private static final String STARTER_PROMPT = "Hello! Welcome to College Crusade. This game will help you keep track of everything you accomplished during the day. At the end of the game, we'll print your mental health, social, financial and academic score. Good luck! Press enter to start";
+  private static final String STARTER_PROMPT = "Hello! Welcome to College Crusade. This game will help you ask you to make a series of choices. At the end of the game, we'll print your mental health, social, financial and academic score. Good luck! Press enter to start";
 
   private boolean check = false;
   private int money;
@@ -44,6 +44,11 @@ public class game {
     sc = new Scanner(System.in);
     int choice = sc.nextInt(); //storing the users choice
     return choice;
+
+  }
+
+  public void game_demo(){
+    //three card scenario,  use card queue
 
   }
 
