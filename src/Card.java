@@ -21,13 +21,16 @@ public class Card {
 
     }
 
-    public Card getOptionANext(){
-        return OptionANext;
+    public gameOption getOption(int choice){
+      //check bounds
+      if(gameOption > 0 && gameOption <= gameOption.length){
+        return getOption[choice];
+      }
+      else{
+        return;
+      }
     }
 
-    public Card getOptionBNext() {
-        return OptionBNext;
-    }
     //    public void option_A_execute(){
 //    }
 //
