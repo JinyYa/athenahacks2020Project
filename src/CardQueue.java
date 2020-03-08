@@ -24,13 +24,7 @@ public class CardQueue {
     //or just next card in queue by popping
     public Card getNextCard(Card currentCard, int choice) throws NoSuchElementException {
         Card toReturn;
-        if(choice=1){
-            toReturn = currentCard.getOptionANext();
-        }
-        else{
-            toReturn = currentCard.getOptionBNext();
-        }
-
+        toReturn = currentCard.getSubCard(choice);
         if(toReturn == null){
             toReturn = queue.remove();
         }
