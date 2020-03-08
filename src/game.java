@@ -10,8 +10,8 @@ public class game {
   private int mental_health;
   private int social;
 
-    public static CardQueue cards;
-    public static GameState gs;
+    // public static CardQueue cards;
+    // public static GameState gs;
 
     public void game(){
       this.money = 5;
@@ -20,10 +20,13 @@ public class game {
       this.social = 5;
     }
 
-    public String printcard(){
-      String prompt = "y?";
+    public void study(){
+      String prompt = "Did you study today?";
+      // Scanner sc = new Scanner(System.in);
+      // String readString = sc.nextLine();
+      //
       System.out.println(prompt);
-      return prompt;
+      // return prompt;
     }
 
     public boolean check() {
@@ -47,7 +50,7 @@ public class game {
         return;
       }
        else {
-         obj.printcard();
+         obj.study();
        }
 
 
