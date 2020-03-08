@@ -1,4 +1,3 @@
-
 public class GameState {
     public static final int MAX_RESOURCE = 20;
     public static final int NO_ROOMMATE = 0;
@@ -20,7 +19,7 @@ public class GameState {
     private int club;
 
     private int roommate;
-    private int endingType;
+    private int endingType = 0;
 
     public GameState(){ //constructor method
         //resources
@@ -55,13 +54,14 @@ public class GameState {
         studying += change;
     }
 
-    public void updateGameState(int userChoice, Card card){
-        gameOption myOption = card.getOption(userChoice);
+    public EventCard[] updateGameState(int userChoice, Card card){
+        GameOption myOption = card.getOption(userChoice);
         //update all game resources
-
-        //set all flags
-
-        //insert eventCard in CardQueue
+        studying+= myOption.getStudyingChange();
+        social+= myOption.getSocialChange();
+        mental_health+=myOption.getMentalHealthChange();
+        money+=myOption.getMoneyChange();
+        return myOption.getEventCards();
     }
     public boolean gameOver(){
         //studying 0
@@ -90,31 +90,14 @@ public class GameState {
         else{
           return false;
         }
-
-
     }
+
 
     public int getEndingType(){
       if(gameOver() == false){
         return HAPPY_ENDING;
       }
-      else if (endingType == MONEY_SAD){
-        return MONEY_SAD;
-      }
-      else if(endingType == STUDY_SAD){
-        return STUDY_SAD;
-      }
-      else if(endingType == MENTAL_HEALTH_SAD){
-        return MENTAL_HEALTH_SAD;
-      }
-      else if(endingType == SOCIAL_SAD){
-        return SOCIAL_SAD;
-      }
-      else if(endingType == CLUB_SAD){
-        return CLUB_SAD;
-      }
-      return -1;
-
+      return endingType;
     }
 
 

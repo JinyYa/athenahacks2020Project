@@ -20,6 +20,10 @@ public class CardQueue {
     public void addCard(Card card){
         queue.add(card);
     }
+    public void addCard(Card card,int loc){
+        queue.add(loc,card);
+    }
+
 
     //gets sub-cards if there are OptionANext or OptionBNext cards
     //or just next card in queue by popping

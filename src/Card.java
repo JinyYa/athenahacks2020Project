@@ -2,15 +2,22 @@
 
 public class Card {
 
-    private String name_of_card;
+    protected String name_of_card;
     //private String image;
 
-    private String description;
+    protected String description;
 
-    private gameOption[] options;
+    protected GameOption[] options;
+    //private
+
+    public Card(){
+        this.name_of_card = "";
+        this.description = "";
+        this.options = null;
+    }
 
 
-    public Card(String name, String descript, gameOption[] arr){
+    public Card(String name, String descript, GameOption[] arr){
       this.name_of_card = name;
       this.description = descript;
       this.options = arr;
@@ -21,7 +28,7 @@ public class Card {
       System.out.println(this.name_of_card + "" + this.description + "" + this.options + "");
     }
 
-    public gameOption getOption(int choice){
+    public GameOption getOption(int choice){
       //check bounds
       if(choice > 0 && choice < options.length){
         return options[choice];
