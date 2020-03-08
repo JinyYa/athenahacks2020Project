@@ -22,9 +22,9 @@ public class CardQueue {
 
     //gets sub-cards if there are OptionANext or OptionBNext cards
     //or just next card in queue by popping
-    public Card getNextCard(Card currentCard, boolean choiceA) throws NoSuchElementException {
+    public Card getNextCard(Card currentCard, int choice) throws NoSuchElementException {
         Card toReturn;
-        if(choiceA){
+        if(choice){
             toReturn = currentCard.getOptionANext();
         }
         else{

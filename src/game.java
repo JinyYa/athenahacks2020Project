@@ -10,15 +10,8 @@ public class game {
   private int mental_health;
   private int social;
 
-    // public static CardQueue cards;
-    // public static GameState gs;
-
-    public void game(){
-      this.money = 5;
-      this.studying = 5;
-      this.mental_health = 5;
-      this.social = 5;
-    }
+    public static CardQueue cards;
+    public static GameState gs;
 
     public void study(){
       String prompt = "Did you study today?";
@@ -29,7 +22,7 @@ public class game {
       // return prompt;
     }
 
-    public boolean check() {
+    public static boolean check() {
       Scanner sc = new Scanner(System.in);
       String readString = sc.nextLine();
       System.out.println(readString);
@@ -41,22 +34,43 @@ public class game {
         return true;
       }
     }
+  public static void gameEnding(int endingType){
+
+  }
+  public static int getChoice(){
+
+  }
 
     public static void main(String[] args) {
 
       System.out.println(STARTER_PROMPT);
-      game obj = new game(); //creates a new object
-      if (obj.check() == false) {
-        return;
+      check();
+      int userChoice = 0;
+      int endingType = 0;
+
+
+      boolean gameOver = false;
+      Card card = null;
+      //gameSetup();
+      while(!gameOver){
+//          if(gs.hasEvent()){
+//          }
+          card = cards.getNextCard(card,userChoice);
+          card.show_card();
+          userChoice = getChoice();
+          gs.swipe(userChoice, card);
+          //state machine for any kind of update to game state??
+        }
+
+        gameEnding(endingType);
       }
-       else {
-         obj.study();
-       }
 
 
 
 
-    }
+
+
+
 
 
 
