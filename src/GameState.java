@@ -60,9 +60,8 @@ public class GameState {
         //update all game resources
 
         //set all flags
-//        if (card.getOption(choice).getFlag()){
-//
-//        }
+
+        //insert eventCard in CardQueue
     }
     public boolean gameOver(){
         //studying 0

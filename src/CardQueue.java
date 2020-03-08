@@ -4,10 +4,10 @@ import java.util.LinkedList;
 
 
 public class CardQueue {
-    private Queue <Card> queue;
+    private LinkedList <Card> queue;
 
     //creates a card queue with existing Queue<Cards>
-    public CardQueue(Queue<Card> queue) {
+    public CardQueue(LinkedList<Card> queue) {
         this.queue = queue;
     }
 
