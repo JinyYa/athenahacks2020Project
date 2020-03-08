@@ -34,7 +34,7 @@ public class GameState {
     }
 
     public int getStudying() {
-        return getStudying();
+        return studying;
     }
 
     public int getMental_health() {
@@ -56,6 +56,7 @@ public class GameState {
 
     public EventCard[] updateGameState(int userChoice, Card card){
         GameOption myOption = card.getOption(userChoice);
+        System.out.println("options size: "+ card.getOptions().length);
         //update all game resources
         studying+= myOption.getStudyingChange();
         social+= myOption.getSocialChange();
@@ -81,10 +82,6 @@ public class GameState {
         }
         else if(social ==0){
           endingType = SOCIAL_SAD;
-          return true;
-        }
-        else if (club == 0){
-          endingType = CLUB_SAD;
           return true;
         }
         else{
