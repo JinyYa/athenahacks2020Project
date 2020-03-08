@@ -36,8 +36,5 @@ public class GameState {
     public void changeGrade(int change){
         grade += change;
     }
-    public int getMoney() {
-        return money;
-    }
 
 }
