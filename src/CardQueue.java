@@ -1,21 +1,43 @@
+import java.util.NoSuchElementException;
+import java.util.Queue;
+
+
 public class CardQueue {
-    private Card front;
-    private Card back;
-    private int size; //current size of the queue
-    private int count;
+    private Queue <Card> queue;
 
-
-    public CardQueue(Card front) {
-        this.front = front;
+    //creates a card queue with existing Queue<Cards>
+    public CardQueue(Queue<Card> queue) {
+        this.queue = queue;
     }
 
-    public Card pop(){
-        if(front.get)
-
-        return card;
+    //creates an empty card queue
+    public CardQueue() {
+        this.queue = new Queue <Card>;
     }
 
+    //adds cards to current queue
+    public void addCard(Card card){
+        queue.add(card);
+    }
 
-    public void push(Card card){}
+    //gets sub-cards if there are OptionANext or OptionBNext cards
+    //or just next card in queue by popping
+    public Card getNextCard(Card currentCard, boolean choiceA) throws NoSuchElementException {
+        Card toReturn;
+        if(choiceA){
+            toReturn = currentCard.getOptionANext();
+        }
+        else{
+            toReturn = currentCard.getOptionBNext();
+        }
 
+        if(toReturn == null){
+            toReturn = queue.remove();
+        }
+        return toReturn;
+    }
+
+    public int size(){
+        return queue.size();
+    }
 }
