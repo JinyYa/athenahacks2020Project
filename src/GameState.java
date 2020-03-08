@@ -39,12 +39,13 @@ public class GameState {
         return social;
     }
 
+    //setters
     public void changeGrade(int change){
         grade += change;
     }
 
     public void updateGameState(int userChoice, Card card){
-        gameOption myOption = card.getOption(choice);
+        gameOption myOption = card.getOption(userChoice);
         //update all game resources
 
         //set all flags
@@ -55,8 +56,9 @@ public class GameState {
     public boolean gameOver(){
         //studying 0
         if(){
-
+            //set gameendType to certain int
         }
+
         else if(){
 
         }
@@ -72,5 +74,10 @@ public class GameState {
 
 
     }
+
+    public int getEndingType(){
+
+    }
+
 
 }
