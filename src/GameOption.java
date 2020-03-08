@@ -31,10 +31,14 @@ public class GameOption {
         return socialChange;
     }
     public int getMoneyChange() {
-        return socialChange;
+        return moneyChange;
     }
     public EventCard[] getEventCards(){
         return eventCards;
+    }
+    @Override
+    public String toString(){
+      return this.text;
     }
 
 }
