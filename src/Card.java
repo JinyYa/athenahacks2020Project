@@ -23,11 +23,11 @@ public class Card {
 
     public gameOption getOption(int choice){
       //check bounds
-      if(options > 0 && options <= options.length){
+      if(choice > 0 && choice < options.length){
         return options[choice];
       }
       else{
-        return;
+        return null;
       }
     }
 
