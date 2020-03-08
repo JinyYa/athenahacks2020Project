@@ -2,7 +2,7 @@ public class EventCard extends Card{
 
     private int location;
 
-    public EventCard(String name, String descript, gameOption[] arr, int location ){
+    public EventCard(String name, String descript, GameOption[] arr, int location ){
         this.name_of_card = name;
         this.description = descript;
         this.options = arr;
@@ -10,6 +10,7 @@ public class EventCard extends Card{
     }
 
     public EventCard(){
+
     }
 
     public int getLocation() {

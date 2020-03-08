@@ -1,6 +1,4 @@
-import java.awt.*;
 import java.util.Scanner;
-import java.util.ArrayList;
 
 public class game {
   private static final String STARTER_PROMPT = "Hello! Welcome to College Crusade. This game will help you keep track of everything you accomplished during the day. At the end of the game, we'll print your mental health, social, financial and academic score. Good luck! Press enter to start";
@@ -73,11 +71,22 @@ public class game {
           userChoice = getChoice();
           EventCard[] eventCards = gs.updateGameState(userChoice, card);
 
-          for (int i =0; i<eventCards.length; i++){
+          for (int i =0; i < eventCards.length; i++){
             cards.addCard(eventCards[i]);
           }
         }
 
         gameEnding(gs.getEndingType());
       }
+
+      private void gameSetup(){
+        GameOption[] options;
+        options[i] = new GameOption(String text, int studyingChange, int socialChange, int moneyChange, int mentalHealthChange, EventCard[] eventCards)
+
+        events[]
+
+        cards.addCard(new Card("name", "description", options));
+
+      }
+
 }

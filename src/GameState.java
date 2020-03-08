@@ -1,5 +1,3 @@
-import java.awt.*;
-
 public class GameState {
     public static final int MAX_RESOURCE = 20;
     public static final int NO_ROOMMATE = 0;
@@ -57,7 +55,7 @@ public class GameState {
     }
 
     public EventCard[] updateGameState(int userChoice, Card card){
-        gameOption myOption = card.getOption(userChoice);
+        GameOption myOption = card.getOption(userChoice);
         //update all game resources
         studying+= myOption.getStudyingChange();
         social+= myOption.getSocialChange();
