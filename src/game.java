@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Game {
 
 
-    public static ArrayList<Card> cards;
+    public static CardQueue cards;
+    public static GameState gs;
 
     public void game(){
         boolean gameOver = false;
